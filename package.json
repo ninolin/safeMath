@@ -1,7 +1,7 @@
 {
   "name": "safemath",
-  "version": "1.0.4",
-  "description": "safe math",
+  "version": "1.0.5",
+  "description": "safe add/sub/mule/div",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,6 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "ninolin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninolin/safeMath/issues"
+  },
+  "homepage": "https://github.com/ninolin/safeMath/blob/master/README.md"
 }
