@@ -1,6 +1,6 @@
 {
   "name": "safemath",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "safe math",
   "main": "index.js",
   "repository": {
