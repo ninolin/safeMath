@@ -1,5 +1,5 @@
 const safeMath = class {
-    static safeSub = (x,y) => {
+    static safeSub(x,y) {
         let x_decimals = (x.toString().split(".")[1] != undefined) ? x.toString().split(".")[1].length : 0;
         let y_decimals = (y.toString().split(".")[1] != undefined) ? y.toString().split(".")[1].length : 0;
         let max_decimals = (x_decimals >= y_decimals) ? x_decimals : y_decimals;
@@ -17,7 +17,7 @@ const safeMath = class {
         y = parseInt(y);
         return (x-y)/10**max_decimals;
     }
-    static safeAdd = (x,y) => {
+    static safeAdd(x,y) {
         let x_decimals = (x.toString().split(".")[1] != undefined) ? x.toString().split(".")[1].length : 0;
         let y_decimals = (y.toString().split(".")[1] != undefined) ? y.toString().split(".")[1].length : 0;
         let max_decimals = (x_decimals >= y_decimals) ? x_decimals : y_decimals;
@@ -35,7 +35,7 @@ const safeMath = class {
         y = parseInt(y);
         return (x+y)/10**max_decimals;
     }
-    static safeMule = (x,y) => {
+    static safeMule(x,y) {
         let x_decimals = (x.toString().split(".")[1] != undefined) ? x.toString().split(".")[1].length : 0;
         let y_decimals = (y.toString().split(".")[1] != undefined) ? y.toString().split(".")[1].length : 0;
         let max_decimals = (x_decimals >= y_decimals) ? x_decimals : y_decimals;
@@ -43,7 +43,7 @@ const safeMath = class {
         (y_decimals!=0) && (y = y.toString().split(".")[0]+y.toString().split(".")[1]);
         return (x*y)/10**max_decimals;
     }
-    static safeDiv = (x,y) => {
+    static safeDiv(x,y) {
         let x_decimals = (x.toString().split(".")[1] != undefined) ? x.toString().split(".")[1].length : 0;
         let y_decimals = (y.toString().split(".")[1] != undefined) ? y.toString().split(".")[1].length : 0;
         let max_decimals = (x_decimals >= y_decimals) ? x_decimals : y_decimals;
