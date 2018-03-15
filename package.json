@@ -1,6 +1,6 @@
 {
   "name": "safemath",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "safe add/sub/mule/div",
   "main": "index.js",
   "repository": {
